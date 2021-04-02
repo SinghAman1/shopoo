@@ -7,8 +7,9 @@ const path = require('path');
 
  // BOdyParser MIddleware 
  app.use(bodyParser.json());  
-
-const dbUrl = 'mongodb://localhost:27017/shopping-list';
+//  mongodb+srv://aman_123:<password>@cluster0.xcxw1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+// const dbUrl = 'mongodb://localhost:27017/shopping-list';
+const dbUrl = 'mongodb+srv://aman_123:wJFyI2krFI1ATp7w@cluster0.xcxw1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 // connect to mongo
 mongoose.connect(dbUrl , {
     useNewUrlParser: true,
